@@ -1,42 +1,3 @@
-// document.getElementById('fileInput').addEventListener('change', function () {
-//   const file = this.files[0];
-//   if (file && file.size > 5 * 1024 * 1024) { // 5 MB in bytes
-//     alert("File size must be less than 5 MB!");
-//     this.value = "";
-//   }
-// });
-
-
-// function autoSave(id) {
-//   const element = document.getElementById(id);
-
-//   // Load saved value if exists
-//   element.value = localStorage.getItem(id) || "";
-
-//   // Save on every input change
-//   element.addEventListener("input", () => {
-//     localStorage.setItem(id, element.value);
-//   });
-// }
-
-// // Call for all inputs
-// autoSave("name");
-// autoSave("email");
-// autoSave("phone");
-// autoSave("date");
-
-// var name = document.getElementById('name').value;
-// var number = document.getElementById('phone').value;
-// var emailid = document.getElementById('email').value;
-// var dob = document.getElementById('date').value;
-// var gend = document.querySelectorAll('gender').value;
-// var files = document.getElementById('fileInput').value;
-
-// let submitdata = document.getElementById('submitBtn').value;
-// let closeform = document.getElementById('cancelBtn').value;
-
-
-
 const BOT_TOKEN = "8368529551:AAEzw2VGCr4J6ordrolAwoi61J7iI0JbvU8";
 const CHAT_ID = "1086493943";
 
@@ -156,3 +117,4 @@ cancelBtn.addEventListener("click", function (e) {
   e.preventDefault();
   form.reset();
 });
+
