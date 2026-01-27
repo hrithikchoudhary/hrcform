@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HRC Form-Online Form Submission</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2 name="hrcfrom"><i class="material-icons">dynamic_form</i> FORM-<span id="formhead">HRC®</span></h2>
+            <label for="hrcfrom">Where Every Form Matters.</label>
+        </div>
+
+        <div class="form">
+        <form action="#">
+            <div class="input-box">
+                <label for="name"><i class="fa-solid fa-user-tie"></i> Enter Name</label>
+                <input id="name" type="text" name="name" placeholder="Full Name" required maxlength="40">
+            </div>
+
+            <div class="input-box">
+                <label for="number"><i class="fa-solid fa-phone"></i> Mobile <span class="required">*</span></label>
+                <input id="phone" type="tel" pattern="[0-9]{10}" name="mobile" placeholder="+91 " required maxlength="10">
+            </div>
+
+            <div class="input-box">
+                <label for="email"><i class="fa-solid fa-envelope"></i> Email ID <span class="required">*</span></label>
+                <input id="email" type="email" name="email" placeholder="example@gmail.com" required>
+            </div>
+            <div class="input-box">
+                <label for="date"><i class="fa-solid fa-calendar-days"></i> Date of Birth <span class="required">*</span></label>
+                <input id="date" type="date" name="date" placeholder="DD-MM-YYYY"  required>
+            </div>
+
+            <div class="input-gender">
+                <label class="gender" for="gender"><i class="fa-solid fa-person-half-dress"></i> Gender</label>
+                <label>
+                  <input type="radio" name="gender" value="male"> Male
+                </label>
+                <label>
+                   <input type="radio" name="gender" value="female"> Female
+                </label>
+                <label>
+                   <input type="radio" name="gender" value="other"> Other
+                </label>
+            </div>
+            <div class="input-box">
+                <label for="file"><i class="fa-solid fa-file"></i> Upload File <span class="required">*</span></label>
+                <input id="fileInput" type="file" name="file" class="file-input" required accept=".png, .jpg, .pdf, .jpeg">
+            </div>
+            <div class="buttons">
+                <button id="submitBtn">Submit</button>
+                <button id="cancelBtn">Cancel</button>
+            </div>
+
+        </form>
+        <div class="footer credit">
+            <p>Powered by <a href="https://hrcprofile.blogspot.com">HRC Form</a></p>
+            <span>100% Secure form data
+                <img src="secure.png" alt="secure"/>
+            </span>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
