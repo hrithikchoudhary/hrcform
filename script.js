@@ -118,3 +118,31 @@ cancelBtn.addEventListener("click", function (e) {
   form.reset();
 });
 
+
+// Disable right-click
+document.addEventListener("contextmenu", e => e.preventDefault());
+
+// Disable common DevTools shortcuts
+document.addEventListener("keydown", e => {
+  if (
+    e.key === "F12" ||
+    (e.ctrlKey && e.shiftKey && ["I", "C", "J"].includes(e.key)) ||
+    (e.ctrlKey && e.key === "U")
+  ) {
+    e.preventDefault();
+  }
+});
+
+setInterval(() => {
+  const threshold = 160;
+  if (
+    window.outerWidth - window.innerWidth > threshold ||
+    window.outerHeight - window.innerHeight > threshold
+  ) {
+    document.body.innerHTML =
+      "<h2 style='text-align:center;margin-top:20%'>Developer tools are disabled</h2>";
+  }
+}, 1000);
+
+
+
